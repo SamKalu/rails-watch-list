@@ -1,0 +1,22 @@
+
+<div class="container">
+  <h1>Lists</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th colspan="1"></th>
+      </tr>
+    </thead>
+
+    <tbody>
+    <%# TODO: Add a div around each list %>
+      <% @lists.each do |list| %>
+        <tr>
+          <td><%= link_to list.name, list_path(list) %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+  <%= link_to 'New List', new_list_path %>
+</div>
