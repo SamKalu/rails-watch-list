@@ -8,13 +8,15 @@
 
 puts "Cleaning Db...."
 Movie.destroy_all
+Bookmark.destroy_all
+List.destroy_all
 puts "Db Clean, reseeding...."
 
 10.times do
   movie = Movie.create!(
     title: Faker::Movie.title,
     overview: Faker::TvShows::BojackHorseman.quote,
-    poster_url: "https://source.unsplash.com/random",
+    poster_url: "https://source.unsplash.com/1600x900/?movies",
     rating: rand(0.1..10.0).round(1)
   )
 end
