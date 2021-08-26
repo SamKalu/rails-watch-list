@@ -6,4 +6,6 @@
       <%= movie.title %>  
     <% end %>
   </div>
+  <%= link_to "Edit this list", edit_list_path(@list) %>
+  <%= link_to "Delete this list", @list, method: :delete, data: {confirm: 'Are you sure you want to delete this list?'} %>
 </div>
