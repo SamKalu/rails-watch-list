@@ -8,12 +8,11 @@
 
 puts 'Cleaning Db....'
 Movie.destroy_all
-Bookmark.destroy_all
 List.destroy_all
 puts 'Db Clean, reseeding....'
 
 10.times do
-  movie = Movie.create!(
+  Movie.create!(
     title: Faker::Movie.title,
     overview: Faker::TvShows::BojackHorseman.quote,
     poster_url: 'https://source.unsplash.com/1600x900/?movies',
