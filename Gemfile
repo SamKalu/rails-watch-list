@@ -29,6 +29,7 @@ gem 'jbuilder', '~> 2.7'
 gem 'bootsnap', '>= 1.4.4', require: false
 # Gems added by me
 gem 'autoprefixer-rails', '10.2.5'
+gem 'cloudinary', '~> 1.16.0'
 gem 'dotenv-rails', groups: %i[development test]
 gem 'faker'
 gem 'font-awesome-sass', '~> 5.12.0'
