@@ -21,12 +21,23 @@
 }
 
 .card-category a {
-  color: white;
-  transition: 0.5s;
+  position: relative;
+  display: inline-block;
+  font-size: 2em;
+  font-weight: 800;
+  color: royalblue;
+  overflow: hidden;
+  background: linear-gradient(to right, midnightblue, midnightblue 50%, royalblue 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%;
+  background-position: 100%;
+  transition: background-position 275ms ease;
 }
 
 .card-category a:hover {
-  color: lightgray;
+  background-position: 0 100%;
 }
 .trash {
   position: absolute;
