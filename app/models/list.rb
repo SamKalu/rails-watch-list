@@ -1,4 +1,5 @@
 class List < ApplicationRecord
+  validates :photo, presence: { message: "must be provided" }
   validates :name, presence: true, uniqueness: true
   has_many :bookmarks
   has_many :movies, through: :bookmarks, dependent: :destroy

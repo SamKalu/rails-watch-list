@@ -9,8 +9,8 @@
       <% name_words = list.name.split %>
       <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= cl_image_path list.photo.key, height: 300, width: 400 %>);">
         <%= link_to list.name, list_path(list) %>
-        <%= link_to list_path(list), method: :delete, data: {confirm: 'Are you sure you want to delete this movie?'} do %>
-          <i class="fas fa-dumpster" id="trash"></i>
+        <%= link_to list_path(list), method: :delete, data: {confirm: 'Are you sure you want to delete this list?'} do %>
+          <i class="fas fa-dumpster trash"></i>
         <% end  %>
       </div>  
     <% end %> 
