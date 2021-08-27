@@ -1,5 +1,9 @@
 <div class="container">
-  <h1><%= @list.name  %></h1>
+  <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/borat-2-fotogramas-1605693024.jpg?crop=1.00xw:1.00xh;0,0&resize=480:*);">
+    <div class="container">
+      <h1><%= @list.name  %></h1>
+    </div>
+  </div>
 
   <div class="movie-card">
     <% @list.bookmarks.each do |bookmark| %>
