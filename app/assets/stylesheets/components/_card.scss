@@ -23,11 +23,11 @@
 .card-category a {
   position: relative;
   display: inline-block;
-  font-size: 2em;
+  font-size: 1em;
   font-weight: 800;
-  color: royalblue;
+  color: white;
   overflow: hidden;
-  background: linear-gradient(to right, midnightblue, midnightblue 50%, royalblue 50%);
+  background: linear-gradient(to right, lightgray, lightgray 50%, white 50%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -38,6 +38,7 @@
 
 .card-category a:hover {
   background-position: 0 100%;
+  text-decoration: none;
 }
 .trash {
   position: absolute;
